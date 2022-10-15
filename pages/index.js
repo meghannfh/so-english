@@ -10,15 +10,10 @@ export default function Home() {
       <Head>
         <title>So English 英語教室</title>
       </Head>
-
+      <nav><Nav /></nav>
       <main>
-        <Nav />
-        <section>
         <Top />
-        </section>
-        <section>
-          <About />
-        </section>
+        <About />
       </main>
     </div>
   )

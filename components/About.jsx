@@ -11,9 +11,9 @@ export default function About(){
                 {/* <Image /> */}
                 lol
             </div>
-            <div className=''>
-                <h2 className="text-3xl md:text-6xl p-3 text-center">履歴書</h2>
-                <p className='hidden md:block'>So ENGLISH!英語教室のページにお越しいただき、ありがとうございます。主宰のSoです。これを読んで頂いている方の多くはおそらく、英語が話せるようになりたくてここに辿り着いたのではと思います。</p>
+            <div className='w-fit justify-self-center'>
+                <h2 className="text-5xl md:text-6xl p-3 text-center">About</h2>
+                <p className='hidden text-sm md:block'>So ENGLISH!英語教室のページにお越しいただき、ありがとうございます。主宰のSoです。これを読んで頂いている方の多くはおそらく、英語が話せるようになりたくてここに辿り着いたのではと思います。</p>
                 <AbtBtn text="Education" />
                 <Education />
                 <AbtBtn text="Experience" />

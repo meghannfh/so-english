@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import soPhoto from '../public/soichiHomePageGraphic.svg'
+import soGraphic from '../public/soichiBgLg.png'
 import {BsSpotify} from 'react-icons/bs'
 import {FaInstagramSquare} from 'react-icons/fa'
 import { FiYoutube } from 'react-icons/fi'
@@ -7,7 +8,7 @@ import { FiYoutube } from 'react-icons/fi'
 export default function Top(){
     return(
         //grid md:grid-cols-2 md:items-center mx-5 border-2
-        <div className="grid md:grid-cols-2 md:items-center mx-5 border-2">
+        <div className="grid md:grid-cols-2 md:items-center border-2">
 
                 <div className='w-fit justify-self-center'>
                     <div className='flex flex-row text-5xl md:text-7xl lg:text-8xl'>
@@ -27,9 +28,10 @@ export default function Top(){
             <div className="">
                 <Image 
                 layout="responsive"
-                src={soPhoto} 
+                priority="true"
                 width="500px"
                 height="500px"
+                src={soPhoto}
                 alt="photo of soichi smiling facing to the right" />
             </div>
         </div>

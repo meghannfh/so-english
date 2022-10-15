@@ -26,8 +26,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-section {
-  min-height: 100vh;
-  margin: 0 5px 0 5px;
-}
