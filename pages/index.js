@@ -2,18 +2,21 @@ import Head from 'next/head'
 import Nav from '../components/Nav'
 import Top from '../components/Top'
 import About from'../components/About'
-import LineBtn from '../components/LineBtn'
+import Guide from '../components/resourse pages/Guide'
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-white text-gray-900'>
       <Head>
         <title>So English 英語教室</title>
       </Head>
-      <nav><Nav /></nav>
-      <main>
+      <nav className='sticky top-0 bg-white mb-4 z-10'>
+        <Nav />
+      </nav>
+      <main className='mx-5'>
         <Top />
         <About />
+        <Guide />
       </main>
     </div>
   )

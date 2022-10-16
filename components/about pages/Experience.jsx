@@ -49,7 +49,7 @@ const Experience = () => {
     ]
 
     return (
-        <div className="ml-5 text-sm">
+        <div className="ml-5 text-sm md:text-base">
             {jobs.map((job) => (
             <h3 className="mb-2" key={job}>{job}</h3>
             ))}

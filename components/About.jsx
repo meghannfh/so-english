@@ -1,19 +1,18 @@
 import Image from 'next/image'
+import soImage from '../public/soichiHomePageGraphic.svg'
 import AbtBtn from './AbtBtn'
-import Experience from './Experience'
-import Education from './Education'
+import Experience from './about pages/Experience'
+import Education from './about pages/Education'
 
 export default function About(){
 
     return(
-        <div className='grid border-2 md:grid-cols-2'>
-            <div className='justify-self-center'>
-                {/* <Image /> */}
-                lol
+        <div className='grid md:grid-cols-2 items-center h-screen md:h-fit border-4 border-blue-500' id="about">
+            <div className='justify-self-center hidden md:grid'>
+                <Image src={soImage}/>
             </div>
             <div className='w-fit justify-self-center'>
-                <h2 className="text-5xl md:text-6xl p-3 text-center">About</h2>
-                <p className='hidden text-sm md:block'>So ENGLISH!英語教室のページにお越しいただき、ありがとうございます。主宰のSoです。これを読んで頂いている方の多くはおそらく、英語が話せるようになりたくてここに辿り着いたのではと思います。</p>
+                <h2 className="text-5xl md:text-6xl p-3 mb-10 text-center">Qualifications</h2>
                 <AbtBtn text="Education" />
                 <Education />
                 <AbtBtn text="Experience" />

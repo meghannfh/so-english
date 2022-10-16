@@ -25,10 +25,12 @@ module.exports = {
       colors : theme => ({
           "outline-green": "var(--line-btn-outline)",
           "btn-green": "var(--line-btn-text)",
+          "so-blue": "var(--so-blue)",
       }),
       backgroundImage: theme => ({
         'soichibg-lg': "url('~/public/soichiBgLg.png')",
         'soichi-mobile': "url('~/public/soichiMobile.png')",
+        'main-bg': "url('~/public/bgimage.svg')",
       })
     },
   },
