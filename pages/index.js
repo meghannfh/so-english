@@ -10,10 +10,10 @@ export default function Home() {
       <Head>
         <title>So English 英語教室</title>
       </Head>
-      <nav className='sticky top-0 bg-white mb-4 z-10'>
+      <nav className='sticky top-0 bg-white z-10'>
         <Nav />
       </nav>
-      <main className='mx-5'>
+      <main>
         <Top />
         <About />
         <Guide />

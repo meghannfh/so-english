@@ -29,12 +29,14 @@ a {
 }
 
 p{
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 nav li {
-  padding: 2px 4px;
-  border-radius: 3px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav li:hover {

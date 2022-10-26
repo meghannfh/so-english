@@ -9,7 +9,7 @@ export default function Education(){
     ]
 
     return (
-        <div className="ml-5 text-sm md:text-base">
+        <div className="text-xs md:text-base">
             {schools.map((school) => (
             <h3 className="mb-2" key={school}>{school}</h3>
             ))}
