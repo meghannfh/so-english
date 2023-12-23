@@ -36,7 +36,7 @@ export default function AboutSection({ isIntersecting }) {
   };
 
   return(
-    <div id="section2" className="relative py-20">
+    <div id="section2" className="relative py-10 px-6 md:px-32 lg:px-64 xl:px-72">
       <div className="w-full font-top text-2xl lg:text-4xl flex flex-col items-center pb-10 gap-3">
         <h3>Who is SO?<br></br>SOの生い立ちと3度の留学経験</h3>
       </div>
@@ -46,7 +46,7 @@ export default function AboutSection({ isIntersecting }) {
         <button className="transition-colors duration-300 ease-in-out hover:text-slate-400" id="up" onClick={handleClick}><i class="gg-chevron-down"></i></button>
       </div>}
       <div>
-      {aboutSections[idx]}
+        {aboutSections[idx]}
       </div>
     </div>
   )

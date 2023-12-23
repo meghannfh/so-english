@@ -5,12 +5,12 @@ export default function MethodSection(){
   const h4Styles = "pb-6 pt-3 text-xl font-semibold"
 
   return(
-  	<div className="bg-white pt-10 py-20" id="section3">
+  	<section className="bg-white pt-10 py-10 px-6 md:px-32 lg:px-64 xl:px-72" id="section3">
       <h3 className="w-full font-top text-2xl lg:text-4xl flex flex-col items-center pb-10 gap-3">
         SO's STRATEGY<br></br>
         どうやって英語を話せるようになるの？
       </h3>
-      <div className="px-6 md:px-32 lg:px-64 xl:px-72">
+      <div>
         <h4 className={h4Styles}>SO ENGLISH! 5つのStrategy</h4>
 
         <p className={paragraphStyles}>言語習得には感覚的な側面が多くあります。しかしそれだけでは個人差ができてしまう。納得のいく理論を求める中で第二言語習得論という学問に出会い、2021年、研究の為ベルギーにある大学院の言語学部に留学しました。</p>
@@ -51,6 +51,6 @@ export default function MethodSection(){
 
         <p className={paragraphStyles}>また、各スキルを伸ばす為のトレーニングも複数あり、その種類の数だけ教材があり、レベル毎に異なるだけでなく、学習者との相性があります。SO ENGLISH!では、200以上の市販の教材とオリジナル教材を組み合わせ、学習者に合った教材を使用しています。</p>
       </div>
-    </div>
+    </section>
   )
 }

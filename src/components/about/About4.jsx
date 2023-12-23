@@ -1,6 +1,6 @@
 export default function About4({ h4Styles, paragraphStyles }){
   return (
-    <div className="px-6 md:px-32 lg:px-64 xl:px-72">
+    <>
       <h4 className={h4Styles}>初めての国際交流が、とにかく楽しかった。</h4>
 
       <p className={paragraphStyles}>2005年7月、16歳。高校交換留学。ほとんど英語が話せない状態で、初めてのアメリカ上陸、ノースダコタ州へ!</p>
@@ -16,6 +16,6 @@ export default function About4({ h4Styles, paragraphStyles }){
       <h4 className={h4Styles}>違うことだらけの海外学校生活。</h4>
 			
       <p className={paragraphStyles}>学校生活なしにはやはり留学は語れません。田舎町の3つの地域から子供たちが集まった小さな学校だったので、アジア人は私だけで、良くも悪くも目立っていました。最初は英語が下手だったので、からかわれたり、相手にされないこともあり、悔しくて学校に行きたくないこともありましたが、結果的にとても良い友人に恵まれました。映画でしか見たことがなかったプロムにも行きました。旅行先のホテルで、お風呂の湯気で部屋を満たして「サウナしようぜ」と言ったバカな友人もいました。みんなでパンツ一丁になって、腹を抱えて笑いました。</p>
-    </div>
+    </>
   )
 }
