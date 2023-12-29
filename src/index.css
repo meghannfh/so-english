@@ -200,18 +200,33 @@ span.icon-transition:hover {
   }
 
 /*MENU LI*/
+ul {
+  font-size: 12px;
+  line-height: 1rem;
+  /* box-shadow:6px 6px 20px rgba(0,0,0,0.06), 0px 0px 4px rgba(0,0,0,0.04); */
+}
+
+.nav-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(1em + 48px);
+  height: calc(1em + 24px);
+  z-index: -1;
+}
 
 li {
   width: 100%;
   height: 100%;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-li a{
+/* li a{
   padding: .5rem 0 .5rem 0;
-}
+} */
 
 @media (min-width: 768px) {
   li {
@@ -334,14 +349,20 @@ li a{
 
 
 /*contact form inputs*/
-.contact-form > * {
-  outline: .5px solid rgb(0, 172, 103);
+.contact-form > div {
+  width: 100%;
+  position: relative;
 }
 
-.contact-form > input,
-.contact-form > textarea {
-  padding: .3rem .75rem;
-  border-radius: 3px;
+.contact-form > div > input,
+.contact-form > div > textarea {
+  width: 100%;
+  padding: .5rem 1.5rem;
+  border-bottom: 1.5px solid black;
+}
+
+.contact-form > div > label {
+  position: absolute;
 }
 
 /*Footer list li*/

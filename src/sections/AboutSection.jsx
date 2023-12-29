@@ -37,7 +37,7 @@ export default function AboutSection({ isIntersecting }) {
 
   return(
     <div id="section2" className="relative py-10 px-6 md:px-32 lg:px-64 xl:px-72">
-      <div className="w-full font-top text-2xl lg:text-4xl flex flex-col pb-10 gap-3">
+      <div className="w-full text-xl lg:text-3xl flex flex-col pb-10 gap-3">
         <h3>Who is SO?<br></br>SOの生い立ちと3度の留学経験</h3>
       </div>
       {isIntersecting && <div className="fixed right-10 top-48 text-7xl lg:right-40 flex flex-col items-center justify-center text-slate-800 font-extrabold">

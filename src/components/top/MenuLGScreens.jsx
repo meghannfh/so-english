@@ -13,18 +13,23 @@ export default function MenuLGScreens({ scrollPastTop }){
   }
   /*have the height & text dynamically switch to screen and text 3xl only when it is shown */
   return(
-    <ul className={`flex flex-row gap-4 text-lg font-light text-md transition-colors ease-in-out ${scrollPastTop ? "text-black" : "text-white"}`} onClick={(e) => handleLinkClick(e)}>
-      <li>
-        <a href="#section1">services</a>
+    /*<ul className={`flex flex-row gap-6 text-sm transition-colors ease-in-out ${scrollPastTop ? "text-black" : "text-white"}`} onClick={(e) => handleLinkClick(e)}> */
+    <ul className="flex flex-row gap-3 rounded-full relative" onClick={(e) => handleLinkClick(e)}>
+      {/* <div className="nav-current bg-stone-500 rounded-full"></div> */}
+      <li className="text-white px-3 rounded-full bg-neutral-600">
+        <a href="#top">トップ</a>
       </li>
-      <li>
-        <a href="#section2">about</a>
+      <li className="bg-neutral-600 text-white rounded-full">
+        <a href="#section1">サービス</a>
       </li>
-      <li>
-        <a href="#section3">method</a>
+      <li className="bg-neutral-600 text-white rounded-full">
+        <a href="#section2">アバウト</a>
       </li>
-      <li>
-        <a href="#section4">contact</a>
+      <li className="bg-neutral-600 text-white rounded-full">
+        <a href="#section3">情報</a>
+      </li>
+      <li className="outline outline-amber-600 text-white bg-amber-600 font-bold rounded-full">
+        <a href="#section4">お問い合わせ</a>
       </li>
     </ul>
   )

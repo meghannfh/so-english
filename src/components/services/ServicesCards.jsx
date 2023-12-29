@@ -47,7 +47,7 @@ export default function ServicesCards(){
 
 
   return(
-    <div className="w-full h-full grid md:grid-rows-3 md:grid-cols-2">
+    <div className="w-full h-full grid md:grid-rows-3 md:grid-cols-2 px-20 gap-4">
       {services.map((service, idx) => (
         <span key={idx}>
           <ServicesCard icon={service.icon} title={service.title} subtitle={service.subtitle} description={service.description} idx={idx} />

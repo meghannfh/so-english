@@ -29,7 +29,7 @@ export default function ServiceCard({ icon, title, subtitle, description, idx })
   }
 
   return (
-    <div className="w-full h-72 lg:h-80 xl:h-96 parent-card" data-testid="service-card" onClick={handleClick}>
+    <div className="w-full h-72 lg:h-80 xl:h-96 parent-card rounded-lg" data-testid="service-card" onClick={handleClick}>
       {/*begin content card container */}
       <div className={showBack ? "content flipped" : "content"}>
         {/*begin front of card */}

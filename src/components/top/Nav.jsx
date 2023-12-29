@@ -29,9 +29,9 @@ export default function Nav({ scrollPastTop }){
 
   return(
     <div className="relative w-screen h-fit fixed-width-xlg-screens">
-      <div className="w-full flex flex-row items-center justify-between px-3 md:px-6">
-        <div className="w-min h-[53.98px] md:h-[77.99px] flex flex-col justify-center">
-          <a href="#top" onClick={(e) => handleLinkClick(e, "top")}className={`font-semibold tracking-widest lg:text-lg transition-colors ease-in-out ${scrollPastTop || open ? "text-black" : "text-white"}`}>SO<span className="italic uppercase">English!</span></a>
+      <div className="w-full flex flex-row items-center justify-between px-3 md:px-20 pt-10">
+        <div className="w-min flex flex-col justify-center">
+          <a href="#top" onClick={(e) => handleLinkClick(e, "top")}className={`font-semibold tracking-widest transition-colors ease-in-out ${scrollPastTop || open ? "text-black" : "text-white"}`}>SO<span className="italic uppercase">English!</span></a>
         </div>
         <div className="hidden md:flex">
           <MenuLGScreens scrollPastTop={scrollPastTop}/>

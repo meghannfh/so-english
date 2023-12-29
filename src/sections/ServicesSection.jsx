@@ -7,9 +7,9 @@ export default function ServicesSection(){
   return (
     <main className="bg-white pt-10 lg:pt-20">
       <div className="px-6 md:px-32 lg:px-64 xl:px-72">
-        <h3 className="w-full font-top text-2xl lg:text-4xl items-center pb-10 gap-3 flex flex-col">
-          <span>SO ENGLISH!のMissionは、</span>
-          <span>英語学習を通して「明日がもっと、楽しみになる」こと</span>
+        <h3 className="w-full text-xl lg:text-3xl pb-10">
+          <span className="block">SO ENGLISH!のMission</span>
+          <span>明日がもっと、楽しみになる</span>
         </h3>
         <section>
           <p className={paragraphStyles}>「明日がもっと、楽しみになる」をSO ENGLISH!の新たなスローガンにしたのは2023年、SO ENGLISH!R(セーラームーンRからとっています)と題し、10年やってきた教室に革命(Revolution)が必要だと思ったからです。</p>
@@ -20,11 +20,12 @@ export default function ServicesSection(){
 
           <p className={paragraphStyles}>英語を勉強する方は、みんな違う目的を持っています。その一人ひとりに、明日の楽しみを一つ増やすお手伝いができたらという思いで運営しています。</p>
         </section>
+        <div className="w-full py-20" id="section1">
+          <h3 className="text-2xl lg:text-3xl pb-10">SOがお手伝いできること</h3>
+          <p className="">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
+        </div>
       </div>
-      <div className="w-full text-2xl lg:text-3xl flex flex-col items-center py-20 gap-10" id="section1">
-        <h3 className="font-top">SOがお手伝いできること</h3>
-        <h4 className="px-10 md:px-0 md:w-1/2 text-center leading-loose">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</h4>
-      </div>
+      
       <Suspense>
         <ServicesCards />
       </Suspense>
