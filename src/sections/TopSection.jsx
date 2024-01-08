@@ -1,6 +1,6 @@
-import SocialsBar from "../components/top/SocialsBar";
-import Nav from "../components/top/Nav";
-import { useState, useEffect } from "react";
+import SocialsBar from "../components/top/socials/SocialsBar";
+import Nav from "../components/top/nav/Nav";
+import { useState, useEffect, useRef } from "react";
 
 export default function TopSection(){
   const [scrollPastTop, setScrollPastTop] = useState(false);
@@ -21,11 +21,11 @@ export default function TopSection(){
   }, []);
 
   return(
-    <main className="relative h-screen bg-top-image bg-center bg-cover bg-no-repeat" id="top">
+    <main className="relative h-screen bg-top-image bg-center bg-cover bg-no-repeat"  id="top">
       <nav className={scrollPastTop ? "fixed top-0 left-0 z-50 animate-delayed fadeInUp1" : "fixed top-0 left-0 z-50 animate-delayed fadeInUp1"}>
         <Nav scrollPastTop={scrollPastTop}/>
       </nav>
-      <h2 className="flex flex-col gap-3 absolute top-60 md:top-48 lg:top-52 left-32 text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold uppercase z-20">
+      <h2 className="flex flex-col gap-3 absolute top-60 md:top-48 lg:top-52 left-24 text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold uppercase z-20">
         <span className="animate-delayed fadeInUp2">explore</span>
         <span className="animate-delayed fadeInUp3">evolve</span>
         <span className="animate-delayed fadeInUp4">transcend</span>

@@ -33,6 +33,8 @@ p {
   font-size: small;
 }
 
+
+
 /*top socials and button transition*/
 button.icon-transition,
 span.icon-transition {
@@ -218,10 +220,13 @@ ul {
 li {
   width: 100%;
   height: 100%;
-  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 /* li a{
@@ -357,8 +362,16 @@ li {
 .contact-form > div > input,
 .contact-form > div > textarea {
   width: 100%;
-  padding: .5rem 1.5rem;
+  padding: 1.5rem 0 0 .3rem;
   border-bottom: 1.5px solid black;
+}
+
+.contact-form > div > select {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 9999.99px;
+  padding: .2rem 1rem;
+  margin-top: 1.75rem;
 }
 
 .contact-form > div > label {

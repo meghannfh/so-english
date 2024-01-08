@@ -5,8 +5,8 @@ export default function MethodSection(){
   const h4Styles = "pb-6 pt-3 text-xl font-semibold"
 
   return(
-  	<section className="bg-white pt-10 py-10 px-6 md:px-32 lg:px-64 xl:px-72" id="section3">
-      <h3 className="w-full text-xl lg:text-3xl flex flex-col pb-10 gap-3">
+  	<section className="bg-white py-24 px-6 md:px-32 lg:px-64 xl:px-72">
+      <h3 className="w-full text-xl lg:text-3xl pb-10">
         SO's STRATEGY<br></br>
         どうやって英語を話せるようになるの？
       </h3>
